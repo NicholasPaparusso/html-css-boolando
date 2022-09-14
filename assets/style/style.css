@@ -21,7 +21,11 @@ header{
   height: 70px;
   background-color:#ff6900 ;
   position: fixed;
+  
+  right: 0;
   width: 100%;
+  margin-bottom: 100px;
+
 }
 
 header .page-head{
@@ -52,15 +56,89 @@ header nav:first-of-type li a{
   margin: 0 8px;
   font-weight: bold;
 }
+
 header nav:nth-last-of-type(1) li a{
   margin: 0 5px;
 }
+
 header ul li a:hover{
   color: aquamarine;
 }
 
 /* Header */
 /* Main */
+main{
+ padding-top: 100px;
+}
+main span{
+  display: block;
+}
+
+main .row{
+  display: flex;
+  align-items: center ;
+  justify-content:center ;
+  flex-wrap: wrap;
+}
+
+main .sell-item{
+  margin: 20px 20px;
+  width: calc(80% / 3);
+  height: calc(100% / 2);
+  cursor: pointer;
+
+}
+
+main .sell-item img{
+ width: 100%;
+
+}
+
+main .sell-item .behind{
+  display: none;
+}
+main .sell-item .front:hover + .behind{
+  display: bloc
+}
+
+
+
 /* Main */
 /* Footer */
+footer{
+  margin-top: 50px;
+  height: 100px;
+  background-color: #1a1a1a;
+  border-bottom: 0.5px solid white;
+}
+
+footer .footer.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer span{
+  display: block;
+  color: white;
+  margin-bottom: 10px;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer ul li{
+  display: inline;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+footer ul li a:hover{
+  color: #ff6900;
+  text-decoration: underline;
+}
 /* Footer */

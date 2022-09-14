@@ -13,15 +13,15 @@ body{
 .container{
   width: 80%;
   margin: 0 auto;
-  height: 100%;
 }
+
 /* Utility */
 /* Header */
 header{
+  z-index: +1;
   height: 70px;
   background-color:#ff6900 ;
   position: fixed;
-  
   right: 0;
   width: 100%;
   margin-bottom: 100px;
@@ -29,6 +29,7 @@ header{
 }
 
 header .page-head{
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,7 +72,7 @@ main{
  padding-top: 100px;
 }
 main span{
-  display: block;
+  display:block;
 }
 
 main .row{
@@ -79,29 +80,93 @@ main .row{
   align-items: center ;
   justify-content:center ;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 main .sell-item{
-  margin: 20px 20px;
-  width: calc(80% / 3);
-  height: calc(100% / 2);
+  position: relative;
+  top: 0;
+  right: 0;
+  margin: 20px 0;
+  width: calc((100% / 3) - 20px);
   cursor: pointer;
-
 }
 
 main .sell-item img{
- width: 100%;
+  width: 100%;
+}
 
+main .sell-item .front{
+  display: block;
 }
 
 main .sell-item .behind{
   display: none;
 }
-main .sell-item .front:hover + .behind{
-  display: bloc
+
+main .sell-item .transition:hover .front{
+  display: none;
+}
+
+main .sell-item .transition:hover .behind{
+  display: block;
+}
+
+main .sell-item .heart, .discount,.sostenibility{
+  padding: 1px 8px;
+  display: inline;
+  color: white;
+  position: absolute;
+  font-weight: bold;
+}
+
+main .sell-item .heart{
+ font-size:2.5vh;
+  background-color: white;
+  color: #1a1a1a;
+  bottom: 92%;
+  right: 5%;
+
+}
+
+main .sell-item .discount{
+  bottom: 20%;
+  background-color: red;
+}
+
+main .sell-item .sostenibility{
+  margin-left: 30px;
+  bottom: 20%;
+  left: 5%;
+  background-color: green;
 }
 
 
+main .sell-item .item-name{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+main .sell-item .price{
+  display: inline;
+  color: red;
+}
+main .sell-item .old-price{
+  display: inline;
+  top: -40px;
+  margin-left: 10px;
+  text-decoration:line-through;
+}
+
+main .sell-item .sostenibility-diff{
+  background-color: green;
+  display: inline;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  bottom: 20%;
+  padding: 1px 8px;
+}
 
 /* Main */
 /* Footer */
@@ -113,6 +178,7 @@ footer{
 }
 
 footer .footer.container{
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

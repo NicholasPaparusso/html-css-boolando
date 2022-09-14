@@ -4,10 +4,61 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 /* General */
 /* Utility */
+.container{
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
 /* Utility */
 /* Header */
+header{
+  height: 70px;
+  background-color:#ff6900 ;
+  position: fixed;
+  width: 100%;
+}
+
+header .page-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo-home img{
+ max-width: 150px;
+ margin: 0 50px;
+}
+
+header ul{
+  list-style: none;
+}
+
+header ul li{
+  display: inline;
+}
+
+header ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+header nav:first-of-type li a{ 
+  margin: 0 8px;
+  font-weight: bold;
+}
+header nav:nth-last-of-type(1) li a{
+  margin: 0 5px;
+}
+header ul li a:hover{
+  color: aquamarine;
+}
+
 /* Header */
 /* Main */
 /* Main */

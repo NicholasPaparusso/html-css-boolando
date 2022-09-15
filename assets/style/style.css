@@ -98,9 +98,8 @@ main .sell-item{
 }
 
 main .sell-item img{
-  width: 100%;
+  max-width: 100%;
 }
-
 main .sell-item .front{
   display: block;
 }
@@ -132,6 +131,10 @@ main .sell-item .heart{
   bottom: 92%;
   right: 5%;
 
+}
+
+main .sell-item .heart:hover{
+  color: red;
 }
 
 main .sell-item .discount{

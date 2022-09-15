@@ -144,6 +144,7 @@ main .sell-item .sostenibility{
   bottom: 20%;
   left: 5%;
   background-color: green;
+  margin-left: 4vh;
 }
 
 
@@ -176,6 +177,7 @@ main .sell-item .sostenibility-diff{
 /* Main */
 /* Footer */
 footer{
+  color: white;
   margin-top: 50px;
   height: 100px;
   background-color: #1a1a1a;
@@ -190,7 +192,6 @@ footer .footer.container{
 }
 footer span{
   display: block;
-  color: white;
   margin-bottom: 10px;
 }
 
